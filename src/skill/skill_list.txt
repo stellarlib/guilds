@@ -1,0 +1,49 @@
+
+- combat (14)
+natural_power
+necromancy
+holy_power
+arcane_power
+missile_weapon
+melee_weapon
+marksman
+tactician
+intimidation
+fighter
+defender
+armor
+slayer
+discipline
+
+- item pick up (10)
+lock_picking
+herb_lore
+sacred_lore
+arcane_lore
+miner
+hunter
+forager
+thievery
+* looter
+scrounger
+
+- exploration (11)
+delver
+illuminator
+traveller
+explorer
+survivalist
+navigator
+divination
+stealth
+path_finder
+cartographer
+scouting
+
+- special abilities (6)
+laborer
+healer
+mentor
+dowsing
+scholar
+trapper

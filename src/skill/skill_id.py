@@ -1,0 +1,48 @@
+
+
+skill_ids = {
+
+    'natural_power',
+    'necromancy',
+    'holy_power',
+    'arcane_power',
+    'missile_weapon',
+    'melee_weapon',
+    'marksman',
+    'tactician',
+    'intimidation',
+    'fighter',
+    'defender',
+    'armor',
+    'slayer',
+    'discipline',
+    'lock_picking',
+    'herb_lore',
+    'sacred_lore',
+    'arcane_lore',
+    'miner',
+    'hunter',
+    'forager',
+    'thievery',
+    'looter',
+    'scrounger',
+    ''','''
+    'delver',
+    'illuminator',
+    'traveller',
+    'explorer',
+    'survivalist',
+    'navigator',
+    'divination',
+    'stealth',
+    'path_finder',
+    'cartographer',
+    'scouting',
+
+    'laborer',
+    'healer',
+    'mentor',
+    'dowsing',
+    'scholar',
+    'trapper'
+}
