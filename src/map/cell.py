@@ -1,11 +1,19 @@
+from .map_coord import MapCoord
 
 
 class Cell(object):
 
-    def __init__(self, coord):
+    def __init__(self, map, terrain, coord):
 
-        # self.coord = Coord(coord)
+        self.map = map
+        self.terrain = terrain
+        self.coord = MapCoord(coord)
+        self.links = []
         self.contents = 'none'
+        self.explored = False
+        self.contents_hidden = True
+        self.foe = None
+
         self._trigger = {
             'treasure': self.find_treasure,
             'trap': self.trigger_trap,
@@ -18,13 +26,16 @@ class Cell(object):
             'foe': self.battle_foes,
             'none': self.find_nothing,
         }
-        self.explored = False
-        self.contents_hidden = True
-        self.foe = None
 
     @property
     def empty(self):
         return self.contents == 'none'
+
+    def link_to_adj(self):
+        for coord in self.coord.get_adj():
+            cell = self.map.get_cell(coord)
+            if cell:
+                self.links.append(cell)
 
     def discover(self):
         self.contents_hidden = False
